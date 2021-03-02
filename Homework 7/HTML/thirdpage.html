@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <title>Third Page</title>
+
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+
+        <style>
+            #header {
+                background-color:blue;
+                color: white;
+            }
+            #page{
+                font-style: oblique;
+                text-decoration: none;
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+
+
+        <h1 id="header">Contact Us</h1>
+
+
+    </head>
+    <body>
+        <form action="thirdpage.html" type="Post">
+            Name: <input type="text" id="Name">
+            <br>
+            <p>Email: <input type="text" id="Email"></p>
+            <br>
+            Do you accept the terms of agreement? 
+            <br/>
+            <input type="radio" name="yesorNo" value="yes">Yes
+            <br>
+            <input type="radio" name="yesorNo" value="no">No
+            <br>
+            <button class="btn btn-primary" id="mySubmit" type="submit">Submit</button>
+        </form>
+
+
+
+        <br />
+            <a id="page" href="homepage.html">Go to my home page</a>
+        <p>
+            <a id="page" href="secondpage.html">Go to my second page</a>
+        </p>
+    </body>
+</html>
