@@ -1,0 +1,104 @@
+<html>
+    <head>
+        <title>Third Page</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+        <style>
+            #header {
+                background-color:blue;
+                color: white;
+            }
+            #page{
+                font-style: oblique;
+                text-decoration: none;
+            }
+            body{
+                text-align: center;
+            }
+        </style>
+        <script>
+            function checkForm()
+            {
+                var name;
+                name = document.getElementById("txtName").value;
+                if(name == "")
+                {
+                    document.getElementById("txtName").style.backgroundColor = "red";
+                    document.getElementById("txtName").focus();
+                }
+                else
+                {
+                    document.getElementById("txtName").style.backgroundColor = "white"; 
+                }
+                var email;
+                name = document.getElementById("txtEmail").value;
+                if(name == "")
+                {
+                    document.getElementById("txtEmail").style.backgroundColor = "red";
+                    document.getElementById("txtEmail").focus();
+                }
+                else
+                {
+                    document.getElementById("txtEmail").style.backgroundColor = "white"; 
+                }
+                var phone;
+                name = document.getElementById("txtPhone").value;
+                if(name == "")
+                {
+                    document.getElementById("txtPhone").style.backgroundColor = "red";
+                    document.getElementById("txtPhone").focus();
+                }
+                else
+                {
+                    document.getElementById("txtPhone").style.backgroundColor = "white"; 
+                }
+                
+            }
+        </script>
+
+
+
+
+
+
+        <h1 id="header">Contact Us</h1>
+    </head>
+    <body>
+        <!-- <form action="thirdpage.html" type="Post">
+            Name: <input type="text" id="Name">
+            <br>
+            <p>Email: <input type="text" id="Email"></p>
+            <br>
+            Do you accept the terms of agreement? 
+            <br/>
+            <input type="radio" name="yesorNo" value="yes">Yes
+            <br>
+            <input type="radio" name="yesorNo" value="no">No
+            <br>
+            <button class="btn btn-primary" id="mySubmit" type="submit">Submit</button>
+        </form> -->
+        <table>
+            <tr>
+                <td>Name</td>
+                <td><input type="text" id="txtName"></td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td><input type="text" id="txtEmail"></td>
+            </tr>
+            <tr>
+                <td>Phone</td>
+                <td><input type="text" id="txtPhone"></td>
+            </tr>
+            <tr>
+                <td colspan="2"><button id="btnSubmit" onClick="checkForm();">Submit</button></td>
+            </tr>
+        </table>
+
+
+        <br />
+            <a id="page" href="homepage.html">Go to my home page</a>
+        <p>
+            <a id="page" href="secondpage.html">Go to my second page</a>
+        </p>
+    </body>
+</html>
